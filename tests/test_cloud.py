@@ -123,7 +123,8 @@ def test_legacy_judge_cookie_migrates_without_resetting_session():
  assert cookie==sign(sid,'public',expiry)
  async def run():
   async with httpx.AsyncClient(transport=httpx.ASGITransport(app=server.app),base_url='http://127.0.0.1:8318',headers={'Origin':'http://127.0.0.1:8318','Cookie':'jane_session='+old}) as c:
-   r=await c.get('/api/session')
+   with patch.object(server,'limiter',Limiter(FakeRedis())):
+    r=await c.get('/api/session')
    assert r.json()['tier']=='public' and r.json()['dailyLimit']==10
    assert '.public.' in r.headers['set-cookie']
    r=await c.post('/api/judge',json={'token':'retired'})
@@ -170,4 +171,22 @@ def test_daily_usage_tracks_reservations_and_resets_by_seoul_date():
   with patch('cloud.limits.datetime') as clock:
    clock.now.return_value=datetime.now(ZoneInfo('Asia/Seoul'))+timedelta(days=1)
    assert (await lim.daily_usage('reader'))['used']==0
+ asyncio.run(run())
+
+
+def test_session_read_limit_is_shared_but_does_not_consume_chat_quota():
+ async def run():
+  lim=Limiter(FakeRedis())
+  async with httpx.AsyncClient(transport=httpx.ASGITransport(app=server.app),base_url='http://127.0.0.1:8318') as c:
+   with patch.object(server,'limiter',lim):
+    for n in range(120):
+     c.cookies.clear() # Private/new sessions still share the IP allowance.
+     r=await c.get('/api/session')
+     assert r.status_code==200
+     assert r.json()['usage']['used']==0
+    r=await c.get('/api/session')
+    assert r.status_code==429 and r.headers['Retry-After']=='60'
+    keys=await lim.redis.db.keys('*session-read:*')
+    await lim.redis.db.delete(*keys) # Simulate expiration of the minute window.
+    assert (await c.get('/api/session')).status_code==200
  asyncio.run(run())

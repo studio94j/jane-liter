@@ -87,6 +87,8 @@ async def health():
 
 @app.get('/api/session')
 async def session(request: Request):
+    # Generous shared-IP allowance, including private browsing and shared Wi-Fi.
+    await limiter.throttle('session-read:'+ip_hash(request),120,60)
     sid,tier,cookie = identity(request)
     try:
         usage = await limiter.daily_usage(sid)
