@@ -156,3 +156,18 @@ def test_ip_daily_quota_shared_across_browsers():
   r=await lim.reserve('another-browser','other-ip','public','other',1)
   assert r
  asyncio.run(run())
+
+def test_daily_usage_tracks_reservations_and_resets_by_seoul_date():
+ from datetime import datetime,timedelta
+ from zoneinfo import ZoneInfo
+ async def run():
+  lim=Limiter(FakeRedis())
+  assert (await lim.daily_usage('reader'))['used']==0
+  r=await lim.reserve('reader','ip','public','usage-1',1)
+  await lim.settle(r,None)
+  assert (await lim.daily_usage('reader'))['used']==1
+  assert (await lim.daily_usage('other'))['used']==0
+  with patch('cloud.limits.datetime') as clock:
+   clock.now.return_value=datetime.now(ZoneInfo('Asia/Seoul'))+timedelta(days=1)
+   assert (await lim.daily_usage('reader'))['used']==0
+ asyncio.run(run())

@@ -195,3 +195,5 @@ dialog.author-profile-dialog{height:88dvh;max-height:88dvh;overflow:hidden;paddi
 
 /* Settings contact footer */
 .settings-contact{margin-top:32px;padding:24px 0 8px;border-top:1px solid var(--line);font:12px/1.9 var(--sans);color:var(--muted);text-align:center;overflow-wrap:anywhere}.settings-contact a{color:inherit;text-decoration:underline;text-underline-offset:3px}.settings-contact a:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+
+.composer-foot .daily-quota{font-size:10px;white-space:nowrap;margin-left:10px}.composer-foot .chat-counter{font-size:10px}

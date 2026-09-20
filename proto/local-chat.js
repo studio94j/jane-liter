@@ -75,7 +75,7 @@ async function send(text,kind,retry=false){
   }
   function consume(line){
     if(!line.trim())return;resetTimer();const event=JSON.parse(line);
-    if(event.type==='meta'){message.sources=event.sources;message.source=event.source;message.retrieval=event.retrieval;message.contextTrimmed=event.trimmed;}
+    if(event.type==='meta'){if(typeof refreshDailyQuota==='function')refreshDailyQuota();message.sources=event.sources;message.source=event.source;message.retrieval=event.retrieval;message.contextTrimmed=event.trimmed;}
     if(event.type==='status'&&event.stage==='quotation')setLoadingStage('quotation');
     if(event.type==='quote'){message.quotation=event.quote;message.quotationChecked=true;}
     if(event.type==='replace'){message.body=event.content;receivedText=!!message.body;update();}
@@ -111,6 +111,7 @@ async function send(text,kind,retry=false){
     if(typeof syncFortuneControls==='function')syncFortuneControls();
     if(state.page==='chat'&&state.author===author)render({keep:true});
     if(limitNotice)showUsageLimitNotice();
+    if(typeof refreshDailyQuota==='function')refreshDailyQuota();
   }
 }
 document.addEventListener('click',event=>{

@@ -79,6 +79,12 @@ class Limiter:
         if not await self.redis.command('EVAL', THROTTLE, 1, self.prefix+key, limit, seconds):
             raise Limited('rate')
 
+    async def daily_usage(self, session):
+        now = datetime.now(ZoneInfo('Asia/Seoul'))
+        day = now.strftime('%Y-%m-%d')
+        used = await self.redis.command('GET', self.prefix+f's:{session}:d:{day}')
+        return {'date':day, 'used':int(used or 0), 'limit':10}
+
     async def reserve(self, session, ip, tier, request_id, amount):
         import json
         now = time.time()

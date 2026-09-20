@@ -88,7 +88,11 @@ async def health():
 @app.get('/api/session')
 async def session(request: Request):
     sid,tier,cookie = identity(request)
-    response = JSONResponse({'tier':tier,'dailyLimit':10,'provider':'gemini'})
+    try:
+        usage = await limiter.daily_usage(sid)
+    except Unavailable:
+        usage = None
+    response = JSONResponse({'tier':tier,'dailyLimit':10,'provider':'gemini','usage':usage})
     set_cookie(response,cookie)
     return response
 
