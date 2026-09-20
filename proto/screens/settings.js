@@ -119,7 +119,7 @@ document.addEventListener("click", (e) => {
   const id = thumb.dataset.authorThumbnail;
   if (e.detail === 0) {
     chooseAuthor(id);
-    render({ keep: true });
+    go("chat");
     return;
   }
   if (authorTap?.id === id && Date.now() - authorTap.time < 400) {
@@ -132,7 +132,7 @@ document.addEventListener("click", (e) => {
     authorTap = null;
     if (state.page === "settings" && !$("#dialog").open) {
       chooseAuthor(id);
-      render({ keep: true });
+      go("chat");
     }
   }, 400);
 });

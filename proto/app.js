@@ -428,7 +428,7 @@ document.addEventListener("click", (e) => {
   }
   if (b.dataset.settingsAuthor) {
     chooseAuthor(b.dataset.settingsAuthor);
-    render({ keep: true });
+    go("chat");
   }
 });
 
