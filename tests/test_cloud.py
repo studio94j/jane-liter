@@ -53,12 +53,12 @@ def test_legacy_tier_uses_shared_budget_and_unknown_failure_charge():
 def test_session_daily_quota():
  async def run():
   lim=Limiter(FakeRedis())
-  for n in range(20):
+  for n in range(10):
    # Reset only minute quota to exercise daily cap without waiting.
    for key in await lim.redis.db.keys('*:m:*'): 
     if ':budget:' not in key:await lim.redis.db.delete(key)
    r=await lim.reserve('same','ip','public',str(n),1);await lim.settle(r,1)
-  with pytest.raises(Limited) as e:await lim.reserve('same','ip','public','21',1)
+  with pytest.raises(Limited) as e:await lim.reserve('same','ip','public','11',1)
   assert e.value.reason=='day'
  asyncio.run(run())
 
@@ -124,7 +124,7 @@ def test_legacy_judge_cookie_migrates_without_resetting_session():
  async def run():
   async with httpx.AsyncClient(transport=httpx.ASGITransport(app=server.app),base_url='http://127.0.0.1:8318',headers={'Origin':'http://127.0.0.1:8318','Cookie':'jane_session='+old}) as c:
    r=await c.get('/api/session')
-   assert r.json()['tier']=='public' and r.json()['dailyLimit']==20
+   assert r.json()['tier']=='public' and r.json()['dailyLimit']==10
    assert '.public.' in r.headers['set-cookie']
    r=await c.post('/api/judge',json={'token':'retired'})
    assert r.status_code in (404,405)
@@ -141,4 +141,18 @@ def test_limit_error_codes_for_contact_notice():
      r=await c.post('/api/chat',json={'author':'austen','messages':[{'role':'user','content':'고민이에요'}]},headers={'Idempotency-Key':'limit-test-123456789'})
      assert r.status_code==429
      assert r.json()['code']=='limit_'+reason
+ asyncio.run(run())
+
+def test_ip_daily_quota_shared_across_browsers():
+ async def run():
+  lim=Limiter(FakeRedis())
+  for n in range(50):
+   for key in await lim.redis.db.keys('*:m:*'):
+    if ':budget:' not in key:await lim.redis.db.delete(key)
+   r=await lim.reserve('browser-'+str(n),'shared-ip','public',str(n),1)
+   await lim.settle(r,1)
+  with pytest.raises(Limited) as e:await lim.reserve('new-browser','shared-ip','public','51',1)
+  assert e.value.reason=='day'
+  r=await lim.reserve('another-browser','other-ip','public','other',1)
+  assert r
  asyncio.run(run())

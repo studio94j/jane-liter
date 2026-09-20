@@ -88,7 +88,7 @@ async def health():
 @app.get('/api/session')
 async def session(request: Request):
     sid,tier,cookie = identity(request)
-    response = JSONResponse({'tier':tier,'dailyLimit':20,'provider':'gemini'})
+    response = JSONResponse({'tier':tier,'dailyLimit':10,'provider':'gemini'})
     set_cookie(response,cookie)
     return response
 

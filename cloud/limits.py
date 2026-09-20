@@ -89,9 +89,9 @@ class Limiter:
         tier = 'public'
         upper = 'PUBLIC'
         entries = [
-            (f's:{session}:d:{day}', 'day', 20, 172800),
+            (f's:{session}:d:{day}', 'day', 10, 172800),
             (f's:{session}:m:{minute}', 'rate', 3, 120),
-            (f'{tier}:ip:{ip}:d:{day}', 'day', 100, 172800),
+            (f'{tier}:ip:{ip}:d:{day}', 'day', 50, 172800),
             (f'{tier}:ip:{ip}:m:{minute}', 'rate', 15, 120),
             (f'{tier}:d:{day}', 'day', int(os.getenv(upper+'_DAILY_REQUESTS',300)), 172800),
             (f'{tier}:budget:d:{day}', 'budget', int(os.getenv(upper+'_DAILY_BUDGET_MICRO_USD',300000)), 172800),
