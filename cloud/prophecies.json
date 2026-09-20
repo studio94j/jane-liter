@@ -1,0 +1,263 @@
+[
+  {
+    "id": "93db8bb3ea939876ce079284",
+    "title": "제인 오스틴에게서 온 징조",
+    "lines": [
+      "낯익은 마음에도 아직 읽지 못한 방이 있구나.",
+      "처음 내린 판단이 마지막 답일 필요는 없으리라.",
+      "오늘은 남의 평가보다 그대의 마음을 다시 펼쳐 보아라."
+    ],
+    "baseLines": [
+      "낯익은 마음에도 아직 읽지 못한 방이 있구나.",
+      "처음 내린 판단이 마지막 답일 필요는 없으리라.",
+      "오늘은 남의 평가보다 그대의 마음을 다시 펼쳐 보아라."
+    ],
+    "action": "최근 생각이 달라진 일은 무엇인가요?",
+    "quote": {
+      "english": "Till this moment, I never knew myself.",
+      "korean": "이 순간까지, 나는 나 자신을 모르고 있었다.",
+      "original_title": "Pride and Prejudice",
+      "title": "오만과 편견",
+      "section": "CHAPTER XXXVI",
+      "translator": "",
+      "text_kind": "original-en",
+      "source_page": "https://www.gutenberg.org/ebooks/1342",
+      "author": "austen",
+      "author_name": "제인 오스틴",
+      "translation_status": "complete",
+      "id": "93db8bb3ea939876ce079284"
+    }
+  },
+  {
+    "id": "f75793ebd472dbabff801e02",
+    "title": "제인 오스틴에게서 온 징조",
+    "lines": [
+      "아직 이름 붙이지 못한 징조가 있구나.",
+      "기다림은 답을 드러낼 수도, 질문을 바꿀 수도 있으리라.",
+      "서둘러 결론 내리기 전에 오늘 확인할 사실 하나를 보아라."
+    ],
+    "baseLines": [
+      "아직 이름 붙이지 못한 징조가 있구나.",
+      "기다림은 답을 드러낼 수도, 질문을 바꿀 수도 있으리라.",
+      "서둘러 결론 내리기 전에 오늘 확인할 사실 하나를 보아라."
+    ],
+    "action": "지금 아는 사실과 기다려야 알 수 있는 일은 무엇인가요?",
+    "quote": {
+      "english": "time will explain.",
+      "korean": "시간이 설명해 줄 것이다.",
+      "original_title": "Persuasion",
+      "title": "설득",
+      "section": "CHAPTER XVI",
+      "translator": "",
+      "text_kind": "original-en",
+      "source_page": "https://www.gutenberg.org/ebooks/105",
+      "author": "austen",
+      "author_name": "제인 오스틴",
+      "translation_status": "complete",
+      "id": "f75793ebd472dbabff801e02"
+    }
+  },
+  {
+    "id": "5cae379c918f96724479d23b",
+    "title": "제인 오스틴에게서 온 징조",
+    "lines": [
+      "큰 말보다 작은 다정함이 눈에 들어올 날이로다.",
+      "빛나는 모습과 마음의 온기는 다를 수 있으리라.",
+      "그대 자신에게도 다정한 선택을 남겨 두어라."
+    ],
+    "baseLines": [
+      "큰 말보다 작은 다정함이 눈에 들어올 날이로다.",
+      "빛나는 모습과 마음의 온기는 다를 수 있으리라.",
+      "그대 자신에게도 다정한 선택을 남겨 두어라."
+    ],
+    "action": "오늘 나에게 다정하게 할 수 있는 일은 무엇인가요?",
+    "quote": {
+      "english": "There is no charm equal to tenderness of heart,",
+      "korean": "다정한 마음에 견줄 매력은 없다.",
+      "original_title": "Emma",
+      "title": "엠마",
+      "section": "VOLUME II · CHAPTER XIII",
+      "translator": "",
+      "text_kind": "original-en",
+      "source_page": "https://www.gutenberg.org/ebooks/158",
+      "author": "austen",
+      "author_name": "제인 오스틴",
+      "translation_status": "complete",
+      "id": "5cae379c918f96724479d23b"
+    }
+  },
+  {
+    "id": "cae0a2cd01b79d23a661c28d",
+    "title": "윌리엄 셰익스피어에게서 온 징조",
+    "lines": [
+      "말하지 못한 마음이 문턱에 서 있구나.",
+      "침묵이 지켜 주던 것이 때로는 무거운 짐이 되리라.",
+      "모든 것을 말할 필요는 없으니 한 문장부터 골라 보아라."
+    ],
+    "baseLines": [
+      "말하지 못한 마음이 문턱에 서 있구나.",
+      "침묵이 지켜 주던 것이 때로는 무거운 짐이 되리라.",
+      "모든 것을 말할 필요는 없으니 한 문장부터 골라 보아라."
+    ],
+    "action": "마음에 남은 일을 한 문장으로 적는다면요?",
+    "quote": {
+      "english": "Give sorrow words.",
+      "korean": "슬픔에 말을 주어라.",
+      "original_title": "THE TRAGEDY OF MACBETH",
+      "title": "맥베스",
+      "section": "ACT IV · SCENE III. England. Before the King’s Palace.",
+      "translator": "",
+      "text_kind": "original-en",
+      "source_page": "https://www.gutenberg.org/ebooks/100",
+      "author": "william",
+      "author_name": "윌리엄 셰익스피어",
+      "translation_status": "complete",
+      "id": "cae0a2cd01b79d23a661c28d"
+    }
+  },
+  {
+    "id": "8570ba8e8bfc891a66228f30",
+    "title": "윌리엄 셰익스피어에게서 온 징조",
+    "lines": [
+      "발걸음보다 마음이 먼저 달려가고 있구나.",
+      "빠른 길이 늘 원하는 곳으로 이어지지는 않으리라.",
+      "한 번 숨을 고르면 다음 발 디딜 곳이 보일 수도 있으리라."
+    ],
+    "baseLines": [
+      "발걸음보다 마음이 먼저 달려가고 있구나.",
+      "빠른 길이 늘 원하는 곳으로 이어지지는 않으리라.",
+      "한 번 숨을 고르면 다음 발 디딜 곳이 보일 수도 있으리라."
+    ],
+    "action": "오늘 서두르지 않아도 되는 일 하나는 무엇인가요?",
+    "quote": {
+      "english": "Wisely and slow; they stumble that run fast.",
+      "korean": "신중하게, 천천히. 서둘러 달리는 이들은 넘어진다.",
+      "original_title": "THE TRAGEDY OF ROMEO AND JULIET",
+      "title": "로미오와 줄리엣",
+      "section": "ACT II · SCENE III. Friar Lawrence’s Cell.",
+      "translator": "",
+      "text_kind": "original-en",
+      "source_page": "https://www.gutenberg.org/ebooks/100",
+      "author": "william",
+      "author_name": "윌리엄 셰익스피어",
+      "translation_status": "complete",
+      "id": "8570ba8e8bfc891a66228f30"
+    }
+  },
+  {
+    "id": "a24106a432d339bd4d7ba4c0",
+    "title": "윌리엄 셰익스피어에게서 온 징조",
+    "lines": [
+      "문 앞에는 가능성과 두려움이 함께 서 있구나.",
+      "망설임이 그대를 지킬 때도, 길을 가릴 때도 있으리라.",
+      "무모한 도약 대신 되돌릴 수 있는 작은 시도를 택해 보아라."
+    ],
+    "baseLines": [
+      "문 앞에는 가능성과 두려움이 함께 서 있구나.",
+      "망설임이 그대를 지킬 때도, 길을 가릴 때도 있으리라.",
+      "무모한 도약 대신 되돌릴 수 있는 작은 시도를 택해 보아라."
+    ],
+    "action": "부담 없이 시험해 볼 수 있는 작은 선택은 무엇인가요?",
+    "quote": {
+      "english": "Our doubts are traitors,\nAnd make us lose the good we oft might win\nBy fearing to attempt.",
+      "korean": "의심은 배신자다. 시도하기를 두려워하게 해, 얻을 수도 있었을 좋은 것을 잃게 한다.",
+      "original_title": "MEASURE FOR MEASURE",
+      "title": "Measure For Measure",
+      "section": "ACT I · SCENE IV. A nunnery.",
+      "translator": "",
+      "text_kind": "original-en",
+      "source_page": "https://www.gutenberg.org/ebooks/100",
+      "author": "william",
+      "author_name": "윌리엄 셰익스피어",
+      "translation_status": "complete",
+      "id": "a24106a432d339bd4d7ba4c0"
+    }
+  },
+  {
+    "id": "b6f60c928e11417a6d96d621",
+    "title": "안톤 체호프에게서 온 징조",
+    "lines": [
+      "지나온 날들이 고쳐 쓸 수 없는 초안처럼 놓였구나.",
+      "같은 장면을 떠올려도 오늘의 눈은 어제와 다르리라.",
+      "새 삶을 기다리기 전에 작은 반복 하나를 바꾸어 보아라."
+    ],
+    "baseLines": [
+      "지나온 날들이 고쳐 쓸 수 없는 초안처럼 놓였구나.",
+      "같은 장면을 떠올려도 오늘의 눈은 어제와 다르리라.",
+      "새 삶을 기다리기 전에 작은 반복 하나를 바꾸어 보아라."
+    ],
+    "action": "다시 반복하고 싶지 않은 작은 습관은 무엇인가요?",
+    "quote": {
+      "english": "Suppose we could use\none life, already ended, as a sort of rough draft for another?",
+      "korean": "이미 끝난 한 삶을 다른 삶을 위한 일종의 초안으로 삼을 수 있다면?",
+      "original_title": "THE THREE SISTERS",
+      "title": "세 자매",
+      "section": "ACT I",
+      "translator": "Julius West",
+      "text_kind": "translation-en",
+      "source_page": "https://www.gutenberg.org/ebooks/7986",
+      "author": "chekhov",
+      "author_name": "안톤 체호프",
+      "translation_status": "complete",
+      "id": "b6f60c928e11417a6d96d621"
+    }
+  },
+  {
+    "id": "b481b37753e212620c4371c1",
+    "title": "안톤 체호프에게서 온 징조",
+    "lines": [
+      "답을 바라는 목소리가 오늘도 들리는구나.",
+      "모른다는 사실만 또렷해지는 날도 있으리라.",
+      "답이 오기 전에도 그대의 하루를 돌볼 수는 있으리라."
+    ],
+    "baseLines": [
+      "답을 바라는 목소리가 오늘도 들리는구나.",
+      "모른다는 사실만 또렷해지는 날도 있으리라.",
+      "답이 오기 전에도 그대의 하루를 돌볼 수는 있으리라."
+    ],
+    "action": "답을 기다리는 동안 나를 돌볼 방법은 무엇인가요?",
+    "quote": {
+      "english": "If only we could know, if only we could know!",
+      "korean": "알 수만 있다면, 알 수만 있다면!",
+      "original_title": "THE THREE SISTERS",
+      "title": "세 자매",
+      "section": "ACT IV",
+      "translator": "Julius West",
+      "text_kind": "translation-en",
+      "source_page": "https://www.gutenberg.org/ebooks/7986",
+      "author": "chekhov",
+      "author_name": "안톤 체호프",
+      "translation_status": "complete",
+      "id": "b481b37753e212620c4371c1"
+    }
+  },
+  {
+    "id": "0874a1284ba10a1b7eea98ed",
+    "title": "안톤 체호프에게서 온 징조",
+    "lines": [
+      "지친 손끝에 쉬고 싶은 마음이 머물러 있구나.",
+      "견디는 일과 쉬는 일이 반드시 적일 필요는 없으리라.",
+      "먼 훗날의 쉼을 기다리기 전에 오늘의 틈 하나를 찾아라."
+    ],
+    "baseLines": [
+      "지친 손끝에 쉬고 싶은 마음이 머물러 있구나.",
+      "견디는 일과 쉬는 일이 반드시 적일 필요는 없으리라.",
+      "먼 훗날의 쉼을 기다리기 전에 오늘의 틈 하나를 찾아라."
+    ],
+    "action": "오늘 잠깐 내려놓아도 괜찮은 일은 무엇인가요?",
+    "quote": {
+      "english": "We shall rest.",
+      "korean": "우리는 쉬게 될 것이다.",
+      "original_title": "UNCLE VANYA",
+      "title": "바냐 아저씨",
+      "section": "ACT IV",
+      "translator": "Not stated in the downloaded edition",
+      "text_kind": "translation-en",
+      "source_page": "https://www.gutenberg.org/ebooks/1756",
+      "author": "chekhov",
+      "author_name": "안톤 체호프",
+      "translation_status": "complete",
+      "id": "0874a1284ba10a1b7eea98ed"
+    }
+  }
+]

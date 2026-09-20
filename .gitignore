@@ -1,0 +1,21 @@
+.env
+.env.*
+!.env.example
+.venv/
+.vercel/
+__pycache__/
+.pytest_cache/
+public/
+*.pyc
+.DS_Store
+# Local experiments, design exports and private QA artifacts
+proto/qa*/
+proto/figma/
+local-llm/results/
+spec/*
+!spec/product-spec-final.md
+*.log
+# Prevent obsolete prototypes from being reintroduced
+proto/v1/
+proto/v2/
+local-llm/logs/

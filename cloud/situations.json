@@ -1,0 +1,168 @@
+[
+  {
+    "id": "love",
+    "label": "연애",
+    "prompt": "좋아하는 마음과 불편한 마음이 함께 있어요.",
+    "pattern": "연애|연인|썸|짝사랑|이별|재회",
+    "terms": "love affection trust",
+    "guidance": "감정과 실제 행동을 구분하며 관계를 살핀다."
+  },
+  {
+    "id": "work",
+    "label": "직장·진로",
+    "prompt": "해야 할 일은 많은데, 계속 이렇게 일해도 될지 모르겠어요.",
+    "pattern": "직장|회사|상사|업무|퇴사|진로|이직|취업",
+    "terms": "work duty ambition choice",
+    "guidance": "업무 부담, 현실 조건, 사용자가 원하는 방향을 나누어 살핀다."
+  },
+  {
+    "id": "relationships",
+    "label": "인간관계",
+    "prompt": "다른 사람에게 맞추다 보면 제 마음을 놓치게 돼요.",
+    "pattern": "인간관계|눈치|맞추다",
+    "terms": "expectation respect obligation",
+    "guidance": "합의한 기대와 추측을 구분하고 관계의 경계를 살핀다."
+  },
+  {
+    "id": "family",
+    "label": "가족",
+    "prompt": "가족을 아끼지만, 가족의 기대가 버겁게 느껴져요.",
+    "pattern": "가족|부모|엄마|아빠|형제",
+    "terms": "family duty expectation independence",
+    "guidance": "가족을 아끼는 마음과 개인의 선택을 함께 존중한다."
+  },
+  {
+    "id": "friends",
+    "label": "친구",
+    "prompt": "친구에게 서운한 마음을 어떻게 꺼내야 할지 모르겠어요.",
+    "pattern": "친구|우정",
+    "terms": "friendship trust disappointment",
+    "guidance": "구체적 사건을 확인하며 친구의 의도를 단정하지 않는다."
+  },
+  {
+    "id": "self",
+    "label": "내 마음·일상",
+    "prompt": "요즘 작은 일에도 지치고, 무엇을 원하는지 모르겠어요.",
+    "pattern": "지치|무기력|일상|외로",
+    "terms": "weariness solitude hope choice",
+    "guidance": "감정을 진단하지 말고 최근 일상과 부담을 살핀다."
+  },
+  {
+    "id": "other",
+    "label": "다른 고민",
+    "prompt": "아직 잘 정리되지 않았지만, 마음에 걸리는 일이 있어요.",
+    "pattern": "다른 고민",
+    "terms": "uncertainty choice life",
+    "guidance": "주제를 강요하지 말고 사용자가 말하고 싶은 장면부터 듣는다."
+  },
+  {
+    "id": "meeting",
+    "label": "새로운 만남",
+    "prompt": "좋은 사람을 만나고 싶은데, 어떤 사람에게 마음이 가는지 모르겠어요.",
+    "pattern": "만남|만나고 싶",
+    "terms": "love affection courtship",
+    "guidance": "상대에 대한 기대와 실제로 확인한 모습을 구분한다.",
+    "legacy": true
+  },
+  {
+    "id": "crush",
+    "label": "짝사랑",
+    "prompt": "작은 친절에도 기대하게 돼요. 제 마음이 앞서는 걸까요?",
+    "pattern": "짝사랑",
+    "terms": "affection hope uncertainty",
+    "guidance": "친절을 호감의 증거로 단정하지 않는다.",
+    "legacy": true
+  },
+  {
+    "id": "flirting",
+    "label": "썸",
+    "prompt": "가까워진 것 같은데, 우리 관계를 물어보기가 두려워요.",
+    "pattern": "썸|사귀기 전",
+    "terms": "courtship uncertainty confession",
+    "guidance": "관계의 정의와 서로 표현한 의사를 확인한다.",
+    "legacy": true
+  },
+  {
+    "id": "dating",
+    "label": "연애 중",
+    "prompt": "좋아하는 마음은 있는데, 같은 문제로 자꾸 다퉈요.",
+    "pattern": "다퉈|싸웠",
+    "terms": "love conflict understanding",
+    "guidance": "반복된 행동과 서로의 기대를 살핀다.",
+    "legacy": true
+  },
+  {
+    "id": "decision",
+    "label": "이별 고민",
+    "prompt": "헤어지고 싶은 건지, 지금의 관계가 달라지길 바라는 건지 모르겠어요.",
+    "pattern": "헤어질까|헤어지고 싶",
+    "terms": "parting choice regret",
+    "guidance": "관계의 변화와 종료 중 무엇을 바라는지 구분한다.",
+    "legacy": true
+  },
+  {
+    "id": "breakup",
+    "label": "헤어진 뒤",
+    "prompt": "헤어진 이유는 이해하지만, 마음은 아직 따라가지 못해요.",
+    "pattern": "헤어졌|헤어진|이별",
+    "terms": "loss grief separation",
+    "guidance": "회복을 재촉하거나 재회를 성급히 권하지 않는다.",
+    "legacy": true
+  },
+  {
+    "id": "reunion",
+    "label": "재회",
+    "prompt": "다시 만나고 싶지만, 같은 이유로 또 헤어질까 봐 두려워요.",
+    "pattern": "재회|다시 만나",
+    "terms": "reconciliation regret change",
+    "guidance": "재회 가능성을 예언하지 말고 이전 문제가 달라졌는지 살핀다.",
+    "legacy": true
+  },
+  {
+    "id": "unavoidable",
+    "label": "피치 못할 이별",
+    "prompt": "서로 좋아하지만 현실적인 이유로 헤어져야 할 것 같아요.",
+    "pattern": "현실적인 이유|피치 못|어쩔 수 없",
+    "terms": "duty distance separation",
+    "guidance": "사랑의 유무와 현실 조건을 구분하고 선택의 여지를 확인한다.",
+    "legacy": true
+  },
+  {
+    "id": "affair",
+    "label": "바람·의심",
+    "prompt": "상대를 의심하게 된 일이 있어요. 확인한 사실부터 정리하고 싶어요.",
+    "pattern": "바람|외도",
+    "terms": "deceit trust fidelity",
+    "guidance": "의심과 확인된 사실을 구분하며 외도로 단정하지 않는다.",
+    "legacy": true
+  },
+  {
+    "id": "replacement",
+    "label": "환승 이별",
+    "prompt": "헤어진 뒤 상대에게 다른 사람이 생겼어요. 배신감과 비교하는 마음이 멈추지 않아요.",
+    "pattern": "환승",
+    "terms": "betrayal jealousy loss",
+    "guidance": "사건의 순서를 확인하며 새로운 관계가 언제 시작됐는지 추측하지 않는다.",
+    "legacy": true
+  },
+  {
+    "id": "betrayal",
+    "label": "배신감·신뢰",
+    "prompt": "상대는 별일 아니라고 하지만, 저는 배신당한 기분이에요.",
+    "pattern": "배신|거짓말|용서|신뢰",
+    "terms": "trust betrayal promise forgiveness",
+    "guidance": "배신감은 인정하되 배신을 사실로 단정하지 않는다. 행동, 합의한 약속, 말하지 않은 기대를 구분한다.",
+    "alternative": "용서하고 싶은 마음과 관계를 끝내고 싶은 마음이 부딪혀요.",
+    "legacy": true
+  },
+  {
+    "id": "temptation",
+    "label": "유혹·흔들림",
+    "prompt": "연인이 있는데 다른 사람에게 자꾸 마음이 가요.",
+    "pattern": "유혹|흔들|다른 사람에게|다른 사람이 좋아",
+    "terms": "desire temptation fidelity restraint",
+    "guidance": "끌리는 감정과 실제 행동을 구분한다. 비난하거나 불륜을 낭만화하지 말고 지키려는 경계와 선택의 결과를 살핀다.",
+    "alternative": "상대에게 연인이 있다는 걸 알면서도 가까워지고 싶어요.",
+    "legacy": true
+  }
+]

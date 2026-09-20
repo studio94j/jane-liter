@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "fastapi",
+  "buildCommand": "python scripts/build_public.py",
+  "functions": {"app.py": {"maxDuration": 120, "excludeFiles": "{.env*,.venv/**,tests/**,spec/**,history/**,proto/**,local-llm/results/**,local-llm/logs/**,**/__pycache__/**}"}},
+  "headers": [{"source": "/(.*)", "headers": [
+    {"key": "X-Content-Type-Options", "value": "nosniff"},
+    {"key": "Referrer-Policy", "value": "same-origin"},
+    {"key": "X-Frame-Options", "value": "DENY"}
+  ]}]
+}
