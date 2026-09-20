@@ -102,7 +102,7 @@ async function send(text,kind,retry=false){
   }catch(error){
     controller.abort();message.incomplete=true;
     s.failedUser=user.id;s.failedText=text;
-    s.error=timedOut?'답변 대기 시간이 초과됐어요. 잠시 뒤 다시 보내 주세요.':error.name==='AbortError'?'답변 생성을 중단했어요.':error.message==='Failed to fetch'?'대화 서버에 연결할 수 없어요. 잠시 뒤 다시 시도해 주세요.':error.message;
+    s.error=error.name==='AbortError'&&!timedOut?'답변 생성을 중단했어요.':`${AUTHORS[author].name}의 컨디션이 좋지 않군요... 조금만 기다렸다 다시 질문해주세요.`;
     if(!message.body.trim())s.messages=s.messages.filter(m=>m.id!==message.id);
   }finally{
     clearTimeout(timer);clearInterval(loadingTimer);requests.delete(author);message.streaming=false;s.pending=false;s.loadingStage=null;
